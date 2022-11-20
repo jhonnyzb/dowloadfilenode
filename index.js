@@ -21,3 +21,5 @@ app.listen(4000);
 app.listen(PORT, () => {
     console.log(`server in : ${PORT}`);
 })
+
+module.exports = app;
