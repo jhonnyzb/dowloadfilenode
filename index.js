@@ -12,6 +12,7 @@ app.get("/", (req, res) => {
 })
 
 app.get("/download1", (req, res) => {
+    return res.download("fondo1.png");
     return res.send('aqui2')
 })
 
