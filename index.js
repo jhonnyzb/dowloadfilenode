@@ -8,7 +8,7 @@ app.use(cors({
 }));
 
 app.get("/", (req, res) => {
-    //return res.send('aqui')
+    return res.send('aqui')
     res.download("./files/10MB.zip");
 })
 
