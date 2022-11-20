@@ -16,7 +16,7 @@ app.get("/download1", (req, res) => {
 })
 
 app.get("/download", (req, res) => {
-    res.download("fondo1.png");
+    return res.download("fondo1.png");
 })
 
 app.listen(4000);
