@@ -9,7 +9,6 @@ app.use(cors({
 
 app.get("/", (req, res) => {
     return res.send('aqui')
-    res.download("./files/10MB.zip");
 })
 
 app.get("/download1", (req, res) => {
@@ -17,7 +16,7 @@ app.get("/download1", (req, res) => {
 })
 
 app.get("/download", (req, res) => {
-    res.download("./files/10MB.zip");
+    res.download("fondo1.png");
 })
 
 app.listen(4000);
