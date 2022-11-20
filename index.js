@@ -12,6 +12,10 @@ app.get("/", (req, res) => {
     res.download("./files/10MB.zip");
 })
 
+app.get("/download1", (req, res) => {
+    return res.send('aqui2')
+})
+
 app.get("/download", (req, res) => {
     res.download("./files/10MB.zip");
 })
