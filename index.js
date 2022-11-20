@@ -17,7 +17,8 @@ app.get("/download1", (req, res) => {
 })
 
 app.get("/download", (req, res) => {
-    return res.download("fondo1.png");
+    const file = `${__dirname}/files/fondo1.png`;
+    return res.download(file);
 })
 
 app.listen(4000);
