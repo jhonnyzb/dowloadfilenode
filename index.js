@@ -17,7 +17,7 @@ app.get("/download1", (req, res) => {
 })
 
 app.get("/download/:guid", (req, res) => {
-    const file = `${__dirname}/files/10MB.zip`;
+    const file = `${__dirname}/files/file1.jpg`;
     return res.download(file);
 })
 
