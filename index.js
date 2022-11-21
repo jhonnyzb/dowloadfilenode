@@ -11,13 +11,9 @@ app.get("/", (req, res) => {
     return res.send('aqui')
 })
 
-app.get("/download1", (req, res) => {
-    return res.download("fondo1.png");
-    return res.send('aqui2')
-})
 
 app.get("/download/:guid", (req, res) => {
-    const file = `${__dirname}/files/file1.jpg`;
+    const file = `${__dirname}/files/5MB.zip`;
     return res.download(file);
 })
 
